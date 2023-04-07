@@ -1,0 +1,27 @@
+info:
+  name: Metabase DB2 Driver
+  version: 1.0.2
+  description: Allows Metabase to connect to DB2 for LUW databases.
+driver:
+  name: db2
+  display-name: DB2
+  lazy-load: true
+  parent: sql-jdbc
+  connection-properties:
+    - host
+    - merge:
+        - port
+        - default: 50000
+    - dbname
+    - user
+    - password
+    - ssl
+    - merge:
+        - additional-options
+        - placeholder: "defaultIsolationLevel=1;readOnly=true;retrieveMessagesFromServerOnGetMessage=true;"
+  connection-properties-include-tunnel-config: true
+init:
+  - step: load-namespace
+    namespace: metabase.driver.db2
+  - step: register-jdbc-driver
+    class: com.ibm.db2.jcc.DB2Driver

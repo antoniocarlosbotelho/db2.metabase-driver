@@ -56,7 +56,7 @@ Clone the [Metabase repo](https://github.com/metabase/metabase) first if you hav
 
 ### Clone the DB2 Metabase Driver
 
-Clone this [DB2 driver repo](https://github.com/alisonrafael/metabase-db2-driver) inside drivers modules folder `/metabase_source/modules/drivers` and rename this repo folder to 'db2' only.
+Clone this [DB2 driver repo](https://github.com/antoniocarlosbotelho/db2.metabase-driver) inside drivers modules folder `/metabase_source/modules/drivers` and rename this repo folder to 'db2' only.
 
 Edit `/metabase_source/modules/drivers/deps.edn` and insert a db2 parameter, just like others: `metabase/db2 {:local/root "db2"}`.
 

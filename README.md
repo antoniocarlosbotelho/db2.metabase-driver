@@ -10,7 +10,7 @@ First download Metabase .jar file [here](https://metabase.com/start/other.html) 
 ```bash
 java -jar metabase.jar
 ```
-The `plugins/` directory will be created. Drop the driver in your `plugins/` directory and run metabase again. You can grab it [here](https://github.com/alisonrafael/metabase-db2-driver/releases/download/v1.1.44/db2.metabase-driver.jar) or build it yourself:
+The `plugins/` directory will be created. Drop the driver in your `plugins/` directory and run metabase again. You can grab it [here](https://github.com/antoniocarlosbotelho/db2.metabase-driver/releases/download/Metabase_0.45.x/db2.metabase-driver.jar) or build it yourself:
 
 ##  Editing the plugin: Prerequisites
 
